@@ -25,7 +25,11 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <CustomCommands>
       <CustomCommands>
-        <Command type="BeforeBuild" command="" workingdir="${SolutionDir}" />
+        <Command>
+          <type>BeforeBuild</type>
+          <command></command>
+          <workingdir>${SolutionDir}</workingdir>
+        </Command>
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -40,13 +44,16 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <CustomCommands>
       <CustomCommands>
-        <Command type="BeforeBuild" command="" workingdir="${SolutionDir}" />
+        <Command>
+          <type>BeforeBuild</type>
+          <command></command>
+          <workingdir>${SolutionDir}</workingdir>
+        </Command>
       </CustomCommands>
     </CustomCommands>
     <DefineConstants>UIKIT</DefineConstants>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
